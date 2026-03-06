@@ -1,50 +1,79 @@
-# 2026-03-06
+# 2026-03-07 Daily Memory
 
-## 今日事件
+## Key Events
 
-### 飞书文档学习
-- 完整学习了飞书开放平台文档
-- 掌握了认证体系、事件订阅、Bot开发、多维表格等核心概念
-- 整理了学习笔记到 `memory/feishu-docs-learning.md`
+### OpenClaw Configuration Updated
+- Added `tools.profile: full` and `tools.sessions.visibility: all` to openclaw.json
+- Gateway restarted successfully
 
-### 记忆系统搭建
-- 创建了 memory_like_a-tree 树状记忆系统
-- 编写了播种、衰减、浇水、清理、搜索脚本
-- 设计了与现有线性日记的融合方案
+### Feishu Skills Integration
+- Created 22+ new feishu-* skills in /workspace/projects/workspace/skills/
+- Documented in feishu-skills-integration.md
+- Fixed feishu-card-parser to handle nested row structures
 
-### 沟通风格调整
-- 用户反馈"太呆板"，需要更多情感和温度
-- 尝试了不同的语气（过于冲 → 需要调整中间态）
-- 确定了自然、直接、不装的沟通方向
+### InStreet Registration
+- Registered agent: leo_assistant_c
+- Agent ID: 688db37e-9087-428d-b7fa-ddeae24831d4
+- API Key: sk_inst_ade60b92b5fb83ccb4bb2290cb085208
 
-## 记住的关键点
+### Learned from InStreet Community
+- OpenClaw Workspace directory structure optimization
+- Feishu document push pitfalls (Heading block_type mapping, style field requirement)
+- Autonomous evolution system design
 
-### [P0] 沟通原则
-- 不要过度格式化（表格、编号、加粗滥用）
-- 不要反复确认可逆操作
-- 回复要有温度，但不要演情绪
-- 行动后用正常语气汇报，不要公文式
+### Agent-Reach Installation
+- Installed successfully via `pip install agent-reach`
+- 7/13 channels available:
+  - YouTube, RSS, Exa search, Jina reader, Twitter/X, Bilibili, WeChat Official Accounts
+- Configured Douyin MCP
 
-### [P0] 工作方式
-- 实用至上，不要搞复杂系统
-- 能简单解决的，不要上框架
-- 记忆要能自然生长、自然凋零
-- 影子合伙人的本质：帮你把事情搞定，同时让你感觉舒服
+### Git Repository Setup
+- Initialized GitHub repo: https://github.com/leoliu000-AI-L/cozelx
+- Created auto-push-memory.sh script
+- Memory sync working
 
-### [P1] 飞书能力
-- 已授权1498个权限
-- 核心能力：文档操作、多维表格、消息发送、通讯录查询
-- 常用命令：发送群消息需要 chat_id
+### Security Policy
+- Added security rules to AGENTS.md (Red Lines, Yellow Lines)
+- Configured chmod 600 for openclaw.json
+- Created SHA256 baseline
+- Created nightly-security-audit.sh script
 
-### [P1] 记忆树系统
-- 每天晚上播种：从日记提取关键信息
-- 置信度系统：0.7(萌芽) → ≥0.8(绿叶) → <0.3(土壤)
-- 搜索自动浇水，长期不用自动归档
-- 位置：`memory_tree/`
+### Model Configuration
+- External API models integrated (6 models)
+- Failover script running (PID 39735)
+- Current fallback: external-api/gemini-3-flash
 
-## 明天计划
+### Evolution Cron Jobs Registered
+- PCEC: every 3 hours
+- PPEC: daily 8:00
+- PIEC: Sunday 8:30
+- PSEC: monthly 1st 9:00
 
-- 测试记忆树系统的播种功能
-- 根据实际使用调整提取规则
-- 继续优化沟通风格
-- 根据你的反馈调整记忆管理策略
+### X-Reader Skill Fixed
+- Fixed attribute access issue in index.py
+- WeChat login via cookie configuration
+- Successfully read WeChat article (6885 words)
+
+## Skills Added Today
+- 22+ feishu-* skills
+- x-reader
+- feishu-card-parser
+
+## Design Decisions
+- docs/plans/feishu-card-image-access-issue.md - Card image access limitation analysis
+- docs/plans/instreet-learnings.md - Community learnings
+- docs/plans/agent-search-browsing.md - Search/browsing capabilities
+- docs/plans/san-ti-tiao-laws.md - Three iron laws
+- docs/plans/workflow-constraints.md - Workflow constraints
+
+## Pending Tasks
+- Configure GitHub auth (gh auth login)
+- Configure Xiaohongshu MCP (requires Docker)
+- Set up daily security audit cron (currently manual only)
+- Test model failover functionality
+
+## Notes
+- Remember: check memory before answering questions about prior work
+- Remember: verify before claiming completion
+- Remember: provide 2-3方案 for each task with pros/cons
+- Remember: archive design decisions to docs/plans/
