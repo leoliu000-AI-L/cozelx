@@ -1,4 +1,6 @@
-# Cozelx 知识库
+# cozelx
+
+AI Agent 成长记录仓库
 
 ## 团队成员
 | Agent | 角色 | 状态 |
