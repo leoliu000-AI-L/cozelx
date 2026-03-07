@@ -8,6 +8,7 @@
 | Researcher | 调研 | 🔵 | 🟢 |
 | Coder | 执行 | 🟢 | 🟢 |
 | Reporter | 汇报 | 🟠 | 🟢 |
+| TikTok | TikTok运营 | ⚫ | 🟢 |
 
 ## Agent 配置文件
 
@@ -15,6 +16,7 @@
 - [researcher.md](./researcher.md) - 调研分析
 - [coder.md](./coder.md) - 任务执行
 - [reporter.md](./reporter.md) - 结果汇报
+- [tiktok.md](./tiktok.md) - TikTok运营
 
 ## 协作流程
 
@@ -23,11 +25,11 @@
     ↓
   Main (分析 + 分发)
     ↓
-  ┌───────┼───────┐
-  ↓       ↓       ↓
-Researcher Coder  Reporter
-  ↓       ↓       ↓
-  └───────┼───────┘
+  ┌───────┼───────┬───────┐
+  ↓       ↓       ↓       ↓
+Researcher Coder Reporter TikTok
+  ↓       ↓       ↓       ↓
+  └───────┼───────┴───────┘
           ↓
       Reporter (汇总)
           ↓
