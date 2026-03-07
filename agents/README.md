@@ -1,17 +1,43 @@
 # Agent 团队配置
 
-## Main (统筹)
-- **职责**: 任务分发、结果汇总
-- **技能**: 任务路由、状态同步
+## 团队成员
 
-## Researcher (调研)
-- **职责**: 信息收集、竞品分析
-- **技能**: 搜索、数据整理
+| Agent | 角色 | 颜色 | 状态 |
+|-------|------|------|------|
+| Main | 统筹调度 | 🟣 | 🟢 |
+| Researcher | 调研 | 🔵 | 🟢 |
+| Coder | 执行 | 🟢 | 🟢 |
+| Reporter | 汇报 | 🟠 | 🟢 |
 
-## Coder (执行)
-- **职责**: 代码执行、任务落地
-- **技能**: 编程、自动化
+## Agent 配置文件
 
-## Reporter (汇报)
-- **职责**: 结果整理、报告生成
-- **技能**: 文档、总结
+- [main.md](./main.md) - 统筹调度
+- [researcher.md](./researcher.md) - 调研分析
+- [coder.md](./coder.md) - 任务执行
+- [reporter.md](./reporter.md) - 结果汇报
+
+## 协作流程
+
+```
+用户指令
+    ↓
+  Main (分析 + 分发)
+    ↓
+  ┌───────┼───────┐
+  ↓       ↓       ↓
+Researcher Coder  Reporter
+  ↓       ↓       ↓
+  └───────┼───────┘
+          ↓
+      Reporter (汇总)
+          ↓
+      最终回复
+```
+
+## 任务看板
+
+GitHub Project: https://github.com/users/leoliu000-AI-L/projects/1
+
+## 参考
+
+- agency-agents 项目: https://github.com/msitarzewski/agency-agents
